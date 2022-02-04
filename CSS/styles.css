@@ -1,0 +1,122 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Make the image fully responsive */
+.carousel-item {
+ height: 500px;
+}
+.carousel-inner{
+ width: 100%;
+ height: 100%;
+}
+
+/* to center thecarousel caption to the middle vertically and horizontally */
+.carousel-caption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+  
+}
+
+
+.carousel-item img {
+    position: absolute;
+    object-fit:cover;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+   
+}
+/* to mave a transparent effect when hovered */
+.carousel-item img:hover{
+    opacity: 0.85;
+
+}
+
+.navbar{
+    background-color: black;
+    
+}
+
+.hot{
+    color: #ff0000;
+}
+ #collapsibleNavbar{
+/* padding-left: 800px; */
+/* pushes the content of the navbarto the right */
+/* justify-content: end;          */
+}
+
+/* .card-column{
+    justify-content: center;
+} */
+
+.card{
+    width: 300px;
+   
+}
+.meal{
+    width: 300px;
+    height: 300px;
+}
+
+.meal img{
+ object-fit:cover;
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+.Mtitle{
+ padding-top: 2.5rem;
+ padding-bottom: 2.5rem ;
+text-align: center;
+}
+
+.tag{
+ text-align: center;
+}
+
+.footer{
+ text-align: center;
+ padding-bottom: 1rem;
+
+}
+
+#footerHead{
+ padding-top: 2.5rem;
+ background-color:black;
+}
+
+/* contact-page */
+
+.contact-form{
+text-align: center;
+padding-top: 2.5rem;
+
+}
+
+#contact-page{
+    padding: 2.5rem;
+}
+
+.map{
+ text-align: center;
+ padding-top: 2.5rem;
+}
+
+#about-page{
+    padding: 2.5rem;
+}
+
+
+.column{
+ text-align: center;
+ padding-top: 1.5rem;
+}

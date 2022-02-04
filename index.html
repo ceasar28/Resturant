@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Resturant main</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/4b453ada1a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/WebDev/resturant/CSS/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg  navbar-dark">
+  <a class="navbar-brand" href="#" style="color: white;" >The<span class="hot">HOT</span>pot</a>
+  <a class="navbar-brand" href="/WebDev/resturant/index.html">
+   <img src="/WebDev/resturant/images/hutpot logo.png" alt="logo" style="height: 100px;">
+ </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon" ></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/WebDev/resturant/index.html" style="color:  #ff0000;">Home</a> 
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/WebDev/resturant/About.html" style="color: white;">About us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/WebDev/resturant/contact.html" style="color: white;">contact us</a>
+      </li>    
+    </ul>
+  </div>  
+</nav>
+
+ 
+<!-- homepage carousel --> 
+ <div id="demo" class="carousel slide" data-ride="carousel">
+
+ <!-- Indicators -->
+ <ul class="carousel-indicators">
+   <li data-target="#demo" data-slide-to="0" class="active"></li>
+   <li data-target="#demo" data-slide-to="1"></li>
+   <li data-target="#demo" data-slide-to="2"></li>
+ </ul>
+ 
+ <!-- The slideshow -->
+ <div class="carousel-inner">
+   <div class="carousel-item active">
+     <img src="/WebDev/resturant/images/egusi-soup landscape.jpg " class="img-fluid" alt="egusi" width="1100" height="500">
+     <div class="carousel-caption">
+      <h1>Fresh and Deliciuos</h1>
+      <h5>Tasty traditional African food, carefully prepared to delight the whole family </h5>
+      <a class="btn btn-warning" href="/WebDev/resturant/About.html"><span style="color: white;">About us</span></a>
+    </div>
+   </div>
+   <div class="carousel-item">
+     <img src="/WebDev/resturant/images/ogbono landscape.jpg" class="img-fluid" alt="ogbono" width="1100"  height="500">
+     <div class="carousel-caption">
+      <h1>Fresh and Deliciuos</h1>
+      <h5>Tasty traditional African food, carefully prepared to delight the whole family </h5>
+      <a class="btn btn-warning" href="/WebDev/resturant/About.html"><span style="color: white;">About us</span></a>
+   </div>
+   </div>
+
+   <div class="carousel-item">
+     <img src="/WebDev/resturant/images/oha landscape.jpg" class="img-fluid" alt="oha" width="1100"  height="500">
+     <div class="carousel-caption">
+      <h1>Fresh and Deliciuos</h1>
+      <h5>Tasty traditional African food, carefully prepared to delight the whole family </h5>
+      <a class="btn btn-warning" href="/WebDev/resturant/About.html"><span style="color: white;">About us</span></a>
+   </div>
+ </div>
+ 
+ <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+   <span class="carousel-control-prev-icon"></span>
+ </a>
+ <a class="carousel-control-next" href="#demo" data-slide="next">
+   <span class="carousel-control-next-icon"></span>
+ </a>
+
+</div>
+
+</div>
+
+<!-- meal checkout section -->
+<section id="food">
+
+ <div class="container-fluid">
+  <div class="Mtitle"><h1>CHECK OUT OUR MENU</h1></div>
+
+  <div class="row">
+
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color:lavender;">
+      <div class="card">
+        <div class="meal">
+       <img src="/WebDev/resturant/images/egusi-meal.jpg" alt=" egusi">
+        </div>
+         <div class="card-body">
+         <div class="tag">
+          <h3>Egusi soup</h3>
+          <p>₦1700</p>
+         </div>
+         <a class="btn btn-lg btn-block btn-outline-primary" href="/WebDev/resturant/About.html">Order</a>
+         <!-- <button type="button" class="btn btn-lg btn-block btn-outline-primary">Order</button> -->
+        </div>
+    </div>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color:lavenderblush;">
+      <div class="card">
+      <div class="meal">
+      <img src="/WebDev/resturant/images/Ogbono-meal.jpeg" alt=" ogbono">
+    </div>
+        <div class="card-body">
+      <div class="tag">
+      <h3>Ogbono soup</h3>
+      <p>₦1370</p>
+      </div>
+      <a class="btn btn-lg btn-block btn-outline-primary" href="/WebDev/resturant/About.html">Order</a>
+      <!-- <button type="button" class="btn btn-lg btn-block btn-outline-primary">Order</button> -->
+      </div>
+     </div>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color:lavender;">
+      <div class="card">
+        <div class="meal">
+         <img src="/WebDev/resturant/images/oha-meal.jpeg" alt=" oha">
+        </div>
+        <div class="card-body">
+         <div class="tag">
+          <h3>Oha soup</h3>
+          <p>₦1500</p >
+          </div>
+          <a class="btn btn-lg btn-block btn-outline-primary" href="/WebDev/resturant/About.html">Order</a>
+          <!-- <button type="button" class="btn btn-lg btn-block btn-outline-primary">Order</button> -->
+        </div> 
+      </div>
+       
+    </div>
+    
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color:lavenderblush;">
+      <div class="card">
+       <div class="meal">
+        <img src="/WebDev/resturant/images/Afang-meal.png" alt=" Afang">
+      </div>
+      <div class="card-body">
+        <div class="tag">
+        <h3>Afang soup</h3>
+        <p>₦1450</p>
+        </div>
+        <a class="btn btn-lg btn-block btn-outline-primary" href="/WebDev/resturant/About.html">Order</a>
+        <!-- <button type="button" class="btn btn-lg btn-block btn-outline-primary">Order</button> -->
+        </div>
+    </div>
+  </div>
+   </div>
+
+   <div class="row">
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color:lavender;">
+      <div class="card">
+     <div class="meal">
+      <img src="/WebDev/resturant/images/ghanarice-meal.jpg" alt=" ghana">
+    </div>
+    <div class="card-body">
+      <div class="tag">
+      <h3>Ghana rice</h3>
+      <p>₦1750</p>
+      </div>
+      <a class="btn btn-lg btn-block btn-outline-primary" href="/WebDev/resturant/About.html">Order</a>
+      <!-- <button type="button" class="btn btn-lg btn-block btn-outline-primary">Order</button> -->
+      </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color:lavenderblush;">
+      <div class="card">
+     <div class="meal">
+      <img src="/WebDev/resturant/images/jollof-meal.jpg" alt=" jellof">
+    </div>
+    <div class="card-body">
+      <div class="tag">
+      <h3>Jellof rice</h3>
+      <p>₦2000</p>
+      </div>
+      <!-- <button type="button" class="btn btn-lg btn-block btn-outline-primary">Order</button> -->
+      <a class="btn btn-lg btn-block btn-outline-primary" href="/WebDev/resturant/About.html">Order</a>
+      </div>
+      </div>
+     
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color:lavender;">
+      <div class="card">
+     <div class="meal">
+      <img src="/WebDev/resturant/images/riceStew-meal.jpg" alt=" RiceStew">
+    </div>
+    <div class="card-body">
+      <div class="tag">
+      <h3>Rice and Stew</h3>
+      <p>₦1500</p>
+      </div>
+      <!-- <button type="button" class="btn btn-lg btn-block btn-outline-primary">Order</button> -->
+      <a class="btn btn-lg btn-block btn-outline-primary" href="/WebDev/resturant/About.html">Order</a>
+      </div>
+      </div>
+    </div>
+
+
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color:lavenderblush;">
+    <div class="card">
+     <div class="meal">
+      <img src="/WebDev/resturant/images/riceSauce-meal.jpg" alt=" rice sauce">
+    </div>
+    <div class="card-body">
+      <div class="tag">
+      <h3>White Rice and sauce</h3>
+      <p>₦2800</p>
+      </div>
+      <!-- <button type="button" class="btn btn-lg btn-block btn-outline-primary">Order</button>
+      <a class="button" href="/WebDev/resturant/About.html"><button type="button" class="btn btn-lg btn-block btn-outline-primary">Order</button></a> -->
+      <a class="btn btn-lg btn-block btn-outline-primary" href="/WebDev/resturant/About.html">Order</a>
+    </div>
+    </div>
+ </div>
+</div>
+
+</section>
+
+
+<!-- footer section -->
+<section id="footerHead">
+ <div class="row">
+  <div class="footcol col-lg-4 col-sm-6">
+   <div class="footer">
+    <a href="/WebDev/resturant/About.html"><i class="far fa-address-card fa-3x" style="color: white;"></i></a> 
+     <a href="/WebDev/resturant/About.html"><h5 style="color: white;">About Us</h5></a> 
+   </div>
+  </div>
+  
+  <div class="footcol col-lg-4 col-sm-6">
+   <div class="footer">
+    <a href="/WebDev/resturant/contact.html"><i class="fas fa-at fa-3x" style="color: white;"></i></a>
+    <a href="/WebDev/resturant/contact.html"><h5 style="color: white;">Contact Us</h5></a>
+   </div>
+   </div>
+
+   <div class="footcol col-lg-4 col-sm-6">
+    <div class="footer">
+     <a href="https://wa.me/qr/V72HUBVXOJGDP1"><i class="fab fa-whatsapp fa-4x" style="color: white;"></i></a>
+    </div>
+    </div>
+ 
+  </div>
+
+ <p style="color: white; text-align: center;">© 2022 African food group of companies</p>
+</section>
+</body>
+</html>
