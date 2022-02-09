@@ -20,9 +20,6 @@ function showalert() {
 
 }
 
-function myFunction() {
- alert("Hello! I am an alert box!");
-} 
 
 function showContact() {
  var contact_name=document.getElementById("usrname").value;
