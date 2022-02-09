@@ -16,7 +16,7 @@ function showalert() {
  var Date=document.getElementById("date").value;
  var Time=document.getElementById("appt").value;
 
- alert( "Your Order has been confirmed\n" + "\nName: "+Name+"\nYour Address: "+address +"\nDate of delivery: " + Date +"\nTime od delivery: " + Time + "\nThank you!");
+ alert( "Your Order has been confirmed\n" + "\nName: "+Name+"\nYour Address: "+address +"\nDate of delivery: " + Date +"\nTime of delivery: " + Time + "\nThank you!");
 
 }
 
