@@ -109,7 +109,7 @@
           <h3>Egusi soup</h3>
           <p>₦1700</p>
          </div>
-        <a class="btn btn-lg btn-block btn-outline-primary" data-toggle="modal" data-target="#myModal" >Order</a>
+        <a class="btn btn-lg btn-block btn-outline-primary" data-toggle="modal" data-target="#mySoupModal" >Order</a>
          <!-- <button type="button" class="btn btn-lg btn-block btn-outline-primary">Order</button> -->
         </div>
     </div>
@@ -125,7 +125,7 @@
       <h3>Ogbono soup</h3>
       <p>₦1370</p>
       </div>
-      <a class="btn btn-lg btn-block btn-outline-primary" data-toggle="modal" data-target="#myModal" >Order</a>
+      <a class="btn btn-lg btn-block btn-outline-primary" data-toggle="modal" data-target="#mySoupModal" >Order</a>
       <!-- <button type="button" class="btn btn-lg btn-block btn-outline-primary">Order</button> -->
       </div>
      </div>
@@ -141,7 +141,7 @@
           <h3>Oha soup</h3>
           <p>₦1500</p >
           </div>
-          <a class="btn btn-lg btn-block btn-outline-primary" data-toggle="modal" data-target="#myModal" >Order</a>
+          <a class="btn btn-lg btn-block btn-outline-primary" data-toggle="modal" data-target="#mySoupModal" >Order</a>
           <!-- <button type="button" class="btn btn-lg btn-block btn-outline-primary">Order</button> -->
         </div> 
       </div>
@@ -158,7 +158,7 @@
         <h3>Afang soup</h3>
         <p>₦1450</p>
         </div>
-        <a class="btn btn-lg btn-block btn-outline-primary" data-toggle="modal" data-target="#myModal" >Order</a>
+        <a class="btn btn-lg btn-block btn-outline-primary" data-toggle="modal" data-target="#mySoupModal" >Order</a>
         <!-- <button type="button" class="btn btn-lg btn-block btn-outline-primary">Order</button> -->
         </div>
     </div>
@@ -176,7 +176,7 @@
       <h3>Ghana rice</h3>
       <p>₦1750</p>
       </div>
-     <a class="btn btn-lg btn-block btn-outline-primary" data-toggle="modal" data-target="#myModal" >Order</a>
+     <a class="btn btn-lg btn-block btn-outline-primary" data-toggle="modal" data-target="#myghanaRiceModal" >Order</a>
       <!-- <button type="button" class="btn btn-lg btn-block btn-outline-primary">Order</button> -->
       </div>
       </div>
@@ -193,7 +193,7 @@
       <p>₦2000</p>
       </div>
       <!-- <button type="button" class="btn btn-lg btn-block btn-outline-primary">Order</button> -->
-     <a class="btn btn-lg btn-block btn-outline-primary" data-toggle="modal" data-target="#myModal" >Order</a>
+     <a class="btn btn-lg btn-block btn-outline-primary" data-toggle="modal" data-target="#myjellofModal" >Order</a>
       </div>
       </div>
      
@@ -210,7 +210,7 @@
       <p>₦1500</p>
       </div>
       <!-- <button type="button" class="btn btn-lg btn-block btn-outline-primary">Order</button> -->
-      <a class="btn btn-lg btn-block btn-outline-primary" data-toggle="modal" data-target="#myModal" >Order</a>
+      <a class="btn btn-lg btn-block btn-outline-primary" data-toggle="modal" data-target="#myriceStewModal" >Order</a>
       </div>
       </div>
     </div>
@@ -228,7 +228,7 @@
       </div>
       <!-- <button type="button" class="btn btn-lg btn-block btn-outline-primary">Order</button>
       <a class="button" href="/WebDev/resturant/About.html"><button type="button" class="btn btn-lg btn-block btn-outline-primary">Order</button></a> -->
-      <a class="btn btn-lg btn-block btn-outline-primary" data-toggle="modal" data-target="#myModal" >Order</a>
+      <a class="btn btn-lg btn-block btn-outline-primary" data-toggle="modal" data-target="#myriceSauceModal" >Order</a>
     </div>
     </div>
  </div>
@@ -236,66 +236,337 @@
 
 </section>
   
-  <!-- The Modal -->
-<div class="modal fade" id="myModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-    
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">Please confirm order</h4>
-        <button type="button" class="close" data-dismiss="modal">X</button>
+<!-- The Modal for sauce rice -->
+  <div class="modal fade" id="myriceSauceModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Please confirm order</h4>
+          <button type="button" class="close" data-dismiss="modal">X</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body" id="modal_body">
+          <!-- action=".content" -->
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="email">Name:</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="usr" placeholder="Enter your name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="pwd">Address:</label>
+              <div class="col-sm-10">
+                <input type=" text" class="form-control" id="adr" placeholder="Enter address">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <!-- Date input -->
+              <label class="control-label col-sm-2" for="date">Date:</label>
+              <div class="col-sm-10">
+                <input class="form-control" id="date" name="date" placeholder="DD/MM/YYYY" type="text" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="appt">Delivery time:</label>
+              <div class="col-sm-10">
+                <input type="time" id="appt" name="appt">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="button" class="btn btn-block btn-outline-primary" data-dismiss="modal"
+                  onclick="riceSaucealert()">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Modal footer
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-lg btn-block btn-outline-primary"  data-dismiss="modal" onclick="showalert()" >Close</button>
+                </div> -->
+
       </div>
-      
-      <!-- Modal body -->
-      <div class="modal-body" id="modal_body">
-        <!-- action=".content" -->
-         <form class="form-horizontal" >
-  <div class="form-group">
-    <label class="control-label col-sm-2" for="email">Name:</label>
-    <div class="col-sm-10">
-      <input type="text" class="form-control" id="usr" placeholder="Enter your name" >
     </div>
   </div>
-  <div class="form-group">
-    <label class="control-label col-sm-2" for="pwd">Address:</label>
-    <div class="col-sm-10">          
-      <input type=" text" class="form-control" id="adr" placeholder="Enter address">
+
+
+  <!-- The Modal for sauce rice -->
+  <div class="modal fade" id="myriceStewModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Please confirm order</h4>
+          <button type="button" class="close" data-dismiss="modal">X</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body" id="modal_body">
+          <!-- action=".content" -->
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="email">Name:</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="usr" placeholder="Enter your name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="pwd">Address:</label>
+              <div class="col-sm-10">
+                <input type=" text" class="form-control" id="adr" placeholder="Enter address">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <!-- Date input -->
+              <label class="control-label col-sm-2" for="date">Date:</label>
+              <div class="col-sm-10">
+                <input class="form-control" id="date" name="date" placeholder="DD/MM/YYYY" type="text" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="appt">Delivery time:</label>
+              <div class="col-sm-10">
+                <input type="time" id="appt" name="appt">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="button" class="btn btn-block btn-outline-primary" data-dismiss="modal"
+                  onclick="riceStewAlert()">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Modal footer
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-lg btn-block btn-outline-primary"  data-dismiss="modal" onclick="showalert()" >Close</button>
+                  </div> -->
+
+      </div>
     </div>
   </div>
-  
-   <div class="form-group"> <!-- Date input -->
-      <label class="control-label col-sm-2" for="date">Date:</label>
-      <div class="col-sm-10">
-      <input class="form-control" id="date" name="date" placeholder="DD/MM/YYYY" type="text"/>
+
+
+  <!-- The Modal for jellof rice -->
+  <div class="modal fade" id="myjellofModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Please confirm order</h4>
+          <button type="button" class="close" data-dismiss="modal">X</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body" id="modal_body">
+          <!-- action=".content" -->
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="email">Name:</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="usr" placeholder="Enter your name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="pwd">Address:</label>
+              <div class="col-sm-10">
+                <input type=" text" class="form-control" id="adr" placeholder="Enter address">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <!-- Date input -->
+              <label class="control-label col-sm-2" for="date">Date:</label>
+              <div class="col-sm-10">
+                <input class="form-control" id="date" name="date" placeholder="DD/MM/YYYY" type="text" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="appt">Delivery time:</label>
+              <div class="col-sm-10">
+                <input type="time" id="appt" name="appt">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="button" class="btn btn-block btn-outline-primary" data-dismiss="modal"
+                  onclick="jellofAlert()">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Modal footer
+          <div class="modal-footer">
+            <button type="button" class="btn btn-lg btn-block btn-outline-primary"  data-dismiss="modal" onclick="showalert()" >Close</button>
+          </div> -->
+
       </div>
-    </div>
-    
-    <div class="form-group">
-    <label class="control-label col-sm-2" for="appt">Delivery time:</label>
-      <div class="col-sm-10">
-      <input type="time" id="appt" name="appt">
-      </div>
-      </div>
-  
-  <div class="form-group">        
-    <div class="col-sm-offset-2 col-sm-10">
-      <button type="button" class="btn btn-block btn-outline-primary" data-dismiss="modal" onclick="showalert()" >Submit</button>
     </div>
   </div>
-</form>
+
+  <!-- The Modal for ghana rice -->
+  <div class="modal fade" id="myghanaRiceModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Please confirm order</h4>
+          <button type="button" class="close" data-dismiss="modal">X</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body" id="modal_body">
+          <!-- action=".content" -->
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="email">Name:</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="usr" placeholder="Enter your name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="pwd">Address:</label>
+              <div class="col-sm-10">
+                <input type=" text" class="form-control" id="adr" placeholder="Enter address">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <!-- Date input -->
+              <label class="control-label col-sm-2" for="date">Date:</label>
+              <div class="col-sm-10">
+                <input class="form-control" id="date" name="date" placeholder="DD/MM/YYYY" type="text" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="appt">Delivery time:</label>
+              <div class="col-sm-10">
+                <input type="time" id="appt" name="appt">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="button" class="btn btn-block btn-outline-primary" data-dismiss="modal"
+                  onclick="ghanariceAlert()">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Modal footer
+              <div class="modal-footer">
+                <button type="button" class="btn btn-lg btn-block btn-outline-primary"  data-dismiss="modal" onclick="showalert()" >Close</button>
+              </div> -->
+
       </div>
-      
-      <!-- Modal footer
+    </div>
+  </div>
+
+
+
+  <!-- modal for soup -->
+  <div class="modal fade" id="mySoupModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Please confirm order</h4>
+          <button type="button" class="close" data-dismiss="modal">X</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body" id="modal_body">
+          <!-- action=".content" -->
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="email">Name:</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="usr" placeholder="Enter your name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="pwd">Address:</label>
+              <div class="col-sm-10">
+                <input type=" text" class="form-control" id="adr" placeholder="Enter address">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <!-- Date input -->
+              <label class="control-label col-sm-2" for="date">Date:</label>
+              <div class="col-sm-10">
+                <input class="form-control" id="date" name="date" placeholder="DD/MM/YYYY" type="text" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="appt">Delivery time:</label>
+              <div class="col-sm-10">
+                <input type="time" id="appt" name="appt">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="button" class="btn btn-block btn-outline-primary" data-dismiss="modal"
+                  onclick="showSoupalert()">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Modal footer
       <div class="modal-footer">
         <button type="button" class="btn btn-lg btn-block btn-outline-primary"  data-dismiss="modal" onclick="showalert()" >Close</button>
       </div> -->
-      
+
+      </div>
     </div>
   </div>
-</div>
 
 
+
+  <!-- custom alert 
+<div id="customAlert">
+  <div id="box">
+    <div class="alert_heading">
+      Your Order has been confirmed
+
+    </div>
+    <div class="content">
+      <p>info</p>
+        <p>
+          <script type="text/javascript">
+           
+      
+          </script>
+        </p>
+      <button type="button" class="btn btn-outline-primary" id="confirmbtn" onclick="hidealert()">OK</button>
+    </div>
+  </div>
+
+</div> -->
 <!-- footer section -->
 <section id="footerHead">
  <div class="row">
